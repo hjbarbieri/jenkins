@@ -6,7 +6,7 @@ job('example2-job-DSL') {
     choiceParam('planeta', ['Mercurio', 'Tierra', 'Neptuno'])
   }
   scm {
-    git('git@github.com:hjbarbieri/jenkins.git', 'main') { node -> 
+    git('https://github.com/hjbarbieri/jenkins.git', 'main') { node -> 
       node / gitConfigName('hjbarbieri')
       node / gitConfigEmail('jbarbieri@morean.co')
     }
