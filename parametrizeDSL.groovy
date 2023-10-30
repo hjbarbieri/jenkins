@@ -6,9 +6,9 @@ job('example-job-DSL') {
     choiceParam('planeta', ['Mercurio', 'Tierra', 'Neptuno'])
   }
   scm {
-    git('https://github.com/macloujulian/jenkins.job.parametrizado.git', 'main') { node -> 
-      node / gitConfigName('macloujulian')
-      node / gitConfigEmail('macloujulian@gmail.com')
+    git('git@github.com:hjbarbieri/jenkins.git', 'main') { node -> 
+      node / gitConfigName('hjbarbieri')
+      node / gitConfigEmail('jbarbieri@morean.co')
     }
   }
   triggers {
