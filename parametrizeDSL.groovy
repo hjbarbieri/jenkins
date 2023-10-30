@@ -12,7 +12,7 @@ job('example2-job-DSL') {
     }
   }
   triggers {
-  	cron('H/7 * * * *')
+  	cron('H/8 * * * *')
     githubPush()
   }
   steps {
