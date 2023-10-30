@@ -1,4 +1,4 @@
-job('example-job-DSL') {
+job('example2-job-DSL') {
   description('JOB DSL example for course')
   parameters {
     stringParam('nombre', defaultValue = 'Javier', description = 'String Job Parameter for the name')
