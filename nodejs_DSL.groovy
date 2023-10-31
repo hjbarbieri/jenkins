@@ -1,7 +1,7 @@
 job('Aplicacion Node.js DSL 2') {
     description('Aplicación Node JS DSL para el curso de Jenkins')
     scm {
-        git('https://github.com/hjbarbieri/jenkins.git', 'master') { node ->
+        git('https://github.com/hjbarbieri/jenkins.git', 'main') { node ->
             node / gitConfigName('hjbarbieri')
             node / gitConfigEmail('jbarbieri@morean.co')
         }
