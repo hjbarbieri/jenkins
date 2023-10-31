@@ -6,6 +6,9 @@ job('Java Maven App DSL 2') {
 	      node / gitConfigEmail('macloujulian@gmail.co')
     	}
     }
+    triggers {
+    	githubPush()
+    }  	
     steps {
         maven {
           mavenInstallation('mavenjenkins')
