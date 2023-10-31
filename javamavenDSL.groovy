@@ -1,4 +1,4 @@
-job('Java Maven App DSL 2') {
+job('Java Maven App DSL 3') {
     description('Java Maven App con DSL para el curso de Jenkins')
     scm {
         git('https://github.com/macloujulian/simple-java-maven-app.git', 'master') { node -> 
@@ -44,4 +44,13 @@ job('Java Maven App DSL 2') {
             authToken(null)
        }
     }
+}
+
+job('Job test Hola Mundo') {
+	description('Aplicacion Hola Mundo de Prueba')	
+	steps {
+		shell('''
+			echo "Hola Mundo!!!!"
+		''')
+	}
 }
